@@ -1,0 +1,106 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scrips/nivel_3/figura_2/figura_.gd" type="Script" id=1]
+[ext_resource path="res://Imagenes/nivel3/fig321nivel3.png" type="Texture" id=2]
+[ext_resource path="res://Scrips/nivel_3/figura_2/nivel_3_figura_2.gd" type="Script" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 100.125
+
+[node name="nivel_3_figura_2" type="TextureRect"]
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="figura" type="TextureRect" parent="."]
+margin_left = 192.0
+margin_top = 449.0
+margin_right = 192.0
+margin_bottom = 449.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="figura"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="figura/Sprite"]
+margin_left = -96.0
+margin_top = -94.0
+margin_right = 94.0
+margin_bottom = 92.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="figura/Sprite"]
+margin_left = -128.0
+margin_top = -42.0
+margin_right = -95.0
+margin_bottom = 79.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="figura/Sprite"]
+margin_left = 75.0
+margin_top = -125.0
+margin_right = 108.0
+margin_bottom = -4.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="figura/Sprite"]
+margin_left = -54.0
+margin_top = 80.0
+margin_right = -21.0
+margin_bottom = 139.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="figura/Sprite"]
+margin_left = 106.0
+margin_top = 72.0
+margin_right = 139.0
+margin_bottom = 107.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect6" type="TextureRect" parent="figura/Sprite"]
+margin_left = 114.0
+margin_top = -108.0
+margin_right = 147.0
+margin_bottom = -73.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="figura"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="figura/Area2D"]
+shape = SubResource( 1 )
+
+[node name="Area_teselado" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area_teselado"]
+polygon = PoolVector2Array( 421, -341, 418, 1371, 1504, 1354, 1499, -320 )
+
+[connection signal="move_to_top" from="figura" to="." method="_on_figura_move_to_top"]
+[connection signal="gui_input" from="figura/Sprite/TextureRect" to="figura" method="_on_TextureRect_gui_input"]
+[connection signal="gui_input" from="figura/Sprite/TextureRect2" to="figura" method="_on_TextureRect_gui_input"]
+[connection signal="gui_input" from="figura/Sprite/TextureRect3" to="figura" method="_on_TextureRect_gui_input"]
+[connection signal="gui_input" from="figura/Sprite/TextureRect4" to="figura" method="_on_TextureRect_gui_input"]
+[connection signal="gui_input" from="figura/Sprite/TextureRect5" to="figura" method="_on_TextureRect_gui_input"]
+[connection signal="gui_input" from="figura/Sprite/TextureRect6" to="figura" method="_on_TextureRect_gui_input"]
+[connection signal="area_entered" from="figura/Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="figura/Area2D" to="." method="_on_Area2D_area_exited"]

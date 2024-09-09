@@ -1,0 +1,386 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Musica/sound-2.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Imagenes/nivel3/voltear11.png" type="Texture" id=2]
+[ext_resource path="res://Imagenes/nivel3/volterarrrrnegro.png" type="Texture" id=3]
+[ext_resource path="res://Escenas/Teselados/nivel_3_figura_3.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Imagenes/nivel3/lateral331.png" type="Texture" id=5]
+[ext_resource path="res://Imagenes/nivel3/lateral332.png" type="Texture" id=6]
+[ext_resource path="res://Imagenes/nivel3/flechaaaareg.png" type="Texture" id=7]
+[ext_resource path="res://Imagenes/nivel3/apilarnivel21suii.png" type="Texture" id=8]
+[ext_resource path="res://Imagenes/nivel3/apilarnivel21negro.png" type="Texture" id=9]
+[ext_resource path="res://Imagenes/nivel3/apilarnivel2123.png" type="Texture" id=10]
+[ext_resource path="res://Imagenes/nivel3/encjaeeeee.png" type="Texture" id=11]
+[ext_resource path="res://Imagenes/nivel3/encajeeenegro.png" type="Texture" id=12]
+[ext_resource path="res://Imagenes/nivel3/apilarnivel21suiii.png" type="Texture" id=13]
+[ext_resource path="res://Imagenes/nivel3/flechaaaaregnegro.png" type="Texture" id=14]
+[ext_resource path="res://Scrips/nivel_3/figura_3/Figuras.gd" type="Script" id=15]
+[ext_resource path="res://Scrips/nivel_3/figura_3/Teselado_N3_f3.gd" type="Script" id=16]
+[ext_resource path="res://Musica/sound-14.mp3" type="AudioStream" id=17]
+[ext_resource path="res://Musica/X2Download (mp3cut.net).mp3" type="AudioStream" id=18]
+[ext_resource path="res://Escenas/Instrucciones/Instrucciones.tscn" type="PackedScene" id=19]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Intro_salida"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../AudioStreamPlayer:autoplay")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../AudioStreamPlayer:autoplay")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Intro_salida"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[node name="Teselado_N3_f3" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( -1629, -174 )
+script = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Figuras" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Imagen" type="Node2D" parent="Figuras"]
+
+[node name="Imagen_iqz" type="Node2D" parent="Figuras/Imagen"]
+
+[node name="Sprite" type="Sprite" parent="Figuras/Imagen/Imagen_iqz"]
+position = Vector2( 208, 540 )
+texture = ExtResource( 5 )
+
+[node name="izq" type="TextureButton" parent="Figuras/Imagen/Imagen_iqz"]
+margin_left = 45.0
+margin_top = 753.0
+margin_right = 183.0
+margin_bottom = 891.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="der" type="TextureButton" parent="Figuras/Imagen/Imagen_iqz"]
+margin_left = 256.0
+margin_top = 753.0
+margin_right = 394.0
+margin_bottom = 891.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="salir" type="TextureButton" parent="Figuras/Imagen/Imagen_iqz"]
+margin_left = 16.0
+margin_top = 12.0
+margin_right = 56.0
+margin_bottom = 52.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Imagen_der" type="Node2D" parent="Figuras/Imagen"]
+
+[node name="Sprite" type="Sprite" parent="Figuras/Imagen/Imagen_der"]
+position = Vector2( 1710, 540 )
+texture = ExtResource( 6 )
+
+[node name="Teselar" type="TextureButton" parent="Figuras/Imagen/Imagen_der"]
+margin_left = 1633.0
+margin_top = 600.0
+margin_right = 1771.0
+margin_bottom = 738.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Apilar" type="TextureButton" parent="Figuras/Imagen/Imagen_der"]
+margin_left = 1633.0
+margin_top = 400.0
+margin_right = 1771.0
+margin_bottom = 538.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fig_51" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_52" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_2" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_3" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_4" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_5" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_6" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_7" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_8" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_9" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_10" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_11" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_12" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_13" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_14" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_15" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_16" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_17" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_18" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_19" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_20" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_21" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_22" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_23" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_24" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_25" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_26" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_27" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_28" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_29" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_30" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_31" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_32" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_33" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_34" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_35" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_36" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_37" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_38" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_39" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_40" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_41" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_42" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_43" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_44" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_45" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_46" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_47" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_48" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_49" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="fig_50" parent="Figuras" instance=ExtResource( 4 )]
+
+[node name="seleccion" type="AudioStreamPlayer" parent="Figuras"]
+stream = ExtResource( 1 )
+volume_db = 10.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -3.0
+margin_top = -2.0
+margin_right = 1922.0
+margin_bottom = 1082.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Intro" type="AnimationPlayer" parent="ColorRect"]
+autoplay = "Intro_salida"
+anims/Intro_salida = SubResource( 1 )
+anims/RESET = SubResource( 2 )
+
+[node name="Salida" type="AnimationPlayer" parent="ColorRect"]
+anims/Intro_salida = SubResource( 3 )
+anims/RESET = SubResource( 4 )
+
+[node name="Salida" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+volume_db = 10.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 18 )
+volume_db = -16.0
+autoplay = true
+
+[node name="Instrucciones" parent="." instance=ExtResource( 19 )]
+
+[connection signal="pressed" from="Figuras/Imagen/Imagen_iqz/izq" to="Figuras" method="_on_izq_pressed"]
+[connection signal="pressed" from="Figuras/Imagen/Imagen_iqz/der" to="Figuras" method="_on_der_pressed"]
+[connection signal="pressed" from="Figuras/Imagen/Imagen_iqz/salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="Figuras/Imagen/Imagen_der/Teselar" to="Figuras" method="_on_Teselar_pressed"]
+[connection signal="pressed" from="Figuras/Imagen/Imagen_der/Apilar" to="Figuras" method="_on_Apilar_pressed"]
+[connection signal="animation_finished" from="ColorRect/Salida" to="." method="_on_Salida_animation_finished"]

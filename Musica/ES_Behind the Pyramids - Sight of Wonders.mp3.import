@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ES_Behind the Pyramids - Sight of Wonders.mp3-7788e4402668819edde64b6f2e72fac7.mp3str"
+
+[deps]
+
+source_file="res://Musica/ES_Behind the Pyramids - Sight of Wonders.mp3"
+dest_files=[ "res://.import/ES_Behind the Pyramids - Sight of Wonders.mp3-7788e4402668819edde64b6f2e72fac7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

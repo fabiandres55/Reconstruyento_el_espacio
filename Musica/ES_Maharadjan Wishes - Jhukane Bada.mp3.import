@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ES_Maharadjan Wishes - Jhukane Bada.mp3-975b57e685fa54d02d360e1d2f87aa5b.mp3str"
+
+[deps]
+
+source_file="res://Musica/ES_Maharadjan Wishes - Jhukane Bada.mp3"
+dest_files=[ "res://.import/ES_Maharadjan Wishes - Jhukane Bada.mp3-975b57e685fa54d02d360e1d2f87aa5b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

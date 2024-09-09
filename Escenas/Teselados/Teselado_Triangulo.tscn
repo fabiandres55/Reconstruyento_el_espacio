@@ -1,0 +1,355 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Imagenes/regree22.png" type="Texture" id=1]
+[ext_resource path="res://Imagenes/regree23.png" type="Texture" id=2]
+[ext_resource path="res://Imagenes/girar_izq_negro.png" type="Texture" id=3]
+[ext_resource path="res://Imagenes/girar_der_negro.png" type="Texture" id=4]
+[ext_resource path="res://Imagenes/girar_izq.png" type="Texture" id=5]
+[ext_resource path="res://Imagenes/girar_der_.png" type="Texture" id=6]
+[ext_resource path="res://Imagenes/apilar.png" type="Texture" id=7]
+[ext_resource path="res://Imagenes/api.png" type="Texture" id=8]
+[ext_resource path="res://Imagenes/tese2.png" type="Texture" id=9]
+[ext_resource path="res://Imagenes/tese.png" type="Texture" id=10]
+[ext_resource path="res://Figuras_Geometricas/Triangulo_.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scrips/Triangulo/Figuras_Triangulos.gd" type="Script" id=12]
+[ext_resource path="res://Imagenes/fondolado1.png" type="Texture" id=13]
+[ext_resource path="res://Imagenes/fondolado2.png" type="Texture" id=14]
+[ext_resource path="res://Scrips/Triangulo/Teselado_Triangulo.gd" type="Script" id=15]
+[ext_resource path="res://Musica/ES_Behind the Pyramids - Sight of Wonders.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Musica/sound-14.mp3" type="AudioStream" id=17]
+[ext_resource path="res://Musica/sound-2.mp3" type="AudioStream" id=18]
+[ext_resource path="res://Escenas/Instrucciones/Instrucciones.tscn" type="PackedScene" id=19]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Intro_salida"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../AudioStreamPlayer:autoplay")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../AudioStreamPlayer:autoplay")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Intro_salida"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[node name="Teselado_Triangulo" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Figuras_Triangulos" type="Control" parent="."]
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Imagen" type="Node2D" parent="Figuras_Triangulos"]
+
+[node name="Imagen_izq" type="Node2D" parent="Figuras_Triangulos/Imagen"]
+
+[node name="Sprite" type="Sprite" parent="Figuras_Triangulos/Imagen/Imagen_izq"]
+position = Vector2( 211, 540 )
+texture = ExtResource( 13 )
+
+[node name="Salir" type="TextureButton" parent="Figuras_Triangulos/Imagen/Imagen_izq"]
+margin_left = 16.0
+margin_top = 12.0
+margin_right = 154.0
+margin_bottom = 150.0
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="girar_der" type="TextureButton" parent="Figuras_Triangulos/Imagen/Imagen_izq"]
+margin_left = 237.0
+margin_top = 626.0
+margin_right = 375.0
+margin_bottom = 764.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="girar_izq" type="TextureButton" parent="Figuras_Triangulos/Imagen/Imagen_izq"]
+margin_left = 28.0
+margin_top = 626.0
+margin_right = 166.0
+margin_bottom = 764.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Imagen_der" type="Node2D" parent="Figuras_Triangulos/Imagen"]
+
+[node name="Sprite" type="Sprite" parent="Figuras_Triangulos/Imagen/Imagen_der"]
+position = Vector2( 1704, 541 )
+texture = ExtResource( 14 )
+
+[node name="Apilar" type="TextureButton" parent="Figuras_Triangulos/Imagen/Imagen_der"]
+margin_left = 1633.0
+margin_top = 400.0
+margin_right = 1771.0
+margin_bottom = 538.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Teselar" type="TextureButton" parent="Figuras_Triangulos/Imagen/Imagen_der"]
+margin_left = 1633.0
+margin_top = 600.0
+margin_right = 1771.0
+margin_bottom = 738.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Triangulo_37" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_38" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_2" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_3" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_4" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_5" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_6" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_7" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_8" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_9" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_10" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_11" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_12" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_13" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_14" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_15" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_16" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_17" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_18" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_19" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_20" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_21" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_22" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_23" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_24" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_25" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_26" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_27" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_28" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_29" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_30" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_31" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_32" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_33" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_34" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_35" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Triangulo_36" parent="Figuras_Triangulos" instance=ExtResource( 11 )]
+
+[node name="Seleccion" type="AudioStreamPlayer" parent="Figuras_Triangulos"]
+stream = ExtResource( 18 )
+volume_db = 10.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -3.0
+margin_top = -2.0
+margin_right = 1922.0
+margin_bottom = 1082.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Intro" type="AnimationPlayer" parent="ColorRect"]
+autoplay = "Intro_salida"
+anims/Intro_salida = SubResource( 1 )
+anims/RESET = SubResource( 2 )
+
+[node name="Salida" type="AnimationPlayer" parent="ColorRect"]
+anims/Intro_salida = SubResource( 3 )
+anims/RESET = SubResource( 4 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+volume_db = -17.0
+autoplay = true
+
+[node name="Salida" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+volume_db = 10.0
+
+[node name="Instrucciones" parent="." instance=ExtResource( 19 )]
+
+[connection signal="pressed" from="Figuras_Triangulos/Imagen/Imagen_izq/Salir" to="." method="_on_Salir_pressed"]
+[connection signal="pressed" from="Figuras_Triangulos/Imagen/Imagen_izq/girar_der" to="Figuras_Triangulos" method="_on_girar_der_pressed"]
+[connection signal="pressed" from="Figuras_Triangulos/Imagen/Imagen_izq/girar_izq" to="Figuras_Triangulos" method="_on_girar_izq_pressed"]
+[connection signal="pressed" from="Figuras_Triangulos/Imagen/Imagen_der/Apilar" to="Figuras_Triangulos" method="_on_Apilar_pressed"]
+[connection signal="pressed" from="Figuras_Triangulos/Imagen/Imagen_der/Teselar" to="Figuras_Triangulos" method="_on_Teselar_pressed"]
+[connection signal="animation_finished" from="ColorRect/Salida" to="." method="_on_Salida_animation_finished"]

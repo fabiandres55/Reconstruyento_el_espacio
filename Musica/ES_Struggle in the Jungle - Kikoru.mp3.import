@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ES_Struggle in the Jungle - Kikoru.mp3-c2ed2765248d9028bf2ba9386b7ca152.mp3str"
+
+[deps]
+
+source_file="res://Musica/ES_Struggle in the Jungle - Kikoru.mp3"
+dest_files=[ "res://.import/ES_Struggle in the Jungle - Kikoru.mp3-c2ed2765248d9028bf2ba9386b7ca152.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,93 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Imagenes/fondoenconst2.png" type="Texture" id=1]
+[ext_resource path="res://Imagenes/fondoilum2.png" type="Texture" id=2]
+[ext_resource path="res://fuentes/Deep Jungle.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Scrips/en_contrucion/En_construccion.gd" type="Script" id=4]
+[ext_resource path="res://Imagenes/regree.png" type="Texture" id=5]
+[ext_resource path="res://Imagenes/regree2.png" type="Texture" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "Normal ",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=2]
+size = 150
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "" ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "letras"
+length = 3.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6, 2.8, 3, 3.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "", "E", "En", "En c", "En co", "En con", "En cons", "En const", "En constr", "En constru", "En construc", "En construcci", "En construcció", "En construcción", "En construcción.", "En construcción..", "En construcción..." ]
+}
+
+[node name="En_construccion" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 960, 540 )
+frames = SubResource( 1 )
+animation = "Normal "
+speed_scale = 0.5
+playing = true
+
+[node name="Label" type="Label" parent="."]
+margin_left = 634.0
+margin_top = 166.0
+margin_right = 1300.0
+margin_bottom = 323.0
+custom_fonts/font = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Label"]
+autoplay = "letras"
+anims/RESET = SubResource( 3 )
+anims/letras = SubResource( 4 )
+
+[node name="Salir" type="TextureButton" parent="."]
+margin_left = 19.0
+margin_top = 17.0
+margin_right = 157.0
+margin_bottom = 155.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Salir" to="." method="_on_Salir_pressed"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/y2mate.com - Lama House  Eon.mp3-5b7aa9790eddefa87bf8c1dc83443eda.mp3str"
+
+[deps]
+
+source_file="res://Musica/y2mate.com - Lama House  Eon.mp3"
+dest_files=[ "res://.import/y2mate.com - Lama House  Eon.mp3-5b7aa9790eddefa87bf8c1dc83443eda.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

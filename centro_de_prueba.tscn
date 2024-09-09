@@ -1,0 +1,807 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Imagenes/fondolado2.png" type="Texture" id=1]
+[ext_resource path="res://Imagenes/nivel3/figura3nivel3.png" type="Texture" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fig_" type="TextureRect" parent="."]
+margin_left = 462.0
+margin_top = 27.0
+margin_right = 462.0
+margin_bottom = 27.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_2" type="TextureRect" parent="."]
+margin_left = 606.0
+margin_top = -8.0
+margin_right = 606.0
+margin_bottom = -8.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_2"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_3" type="TextureRect" parent="."]
+margin_left = 720.0
+margin_top = 43.0
+margin_right = 720.0
+margin_bottom = 43.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_3"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_4" type="TextureRect" parent="."]
+margin_left = 864.0
+margin_top = 8.0
+margin_right = 864.0
+margin_bottom = 8.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_4"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_5" type="TextureRect" parent="."]
+margin_left = 977.0
+margin_top = 63.0
+margin_right = 977.0
+margin_bottom = 63.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_5"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_6" type="TextureRect" parent="."]
+margin_left = 1122.0
+margin_top = 29.0
+margin_right = 1122.0
+margin_bottom = 29.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_6"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_7" type="TextureRect" parent="."]
+margin_left = 1236.0
+margin_top = 84.0
+margin_right = 1236.0
+margin_bottom = 84.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_7"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_8" type="TextureRect" parent="."]
+margin_left = 1381.0
+margin_top = 49.0
+margin_right = 1381.0
+margin_bottom = 49.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_8"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_9" type="TextureRect" parent="."]
+margin_left = 464.0
+margin_top = 218.0
+margin_right = 464.0
+margin_bottom = 218.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_9"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_10" type="TextureRect" parent="."]
+margin_left = 577.0
+margin_top = 271.0
+margin_right = 577.0
+margin_bottom = 271.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_10"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_11" type="TextureRect" parent="."]
+margin_left = 720.0
+margin_top = 235.0
+margin_right = 720.0
+margin_bottom = 235.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_11"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_12" type="TextureRect" parent="."]
+margin_left = 834.0
+margin_top = 291.0
+margin_right = 834.0
+margin_bottom = 291.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_12"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_13" type="TextureRect" parent="."]
+margin_left = 978.0
+margin_top = 256.0
+margin_right = 978.0
+margin_bottom = 256.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_13"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_14" type="TextureRect" parent="."]
+margin_left = 1092.0
+margin_top = 309.0
+margin_right = 1092.0
+margin_bottom = 309.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_14"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_15" type="TextureRect" parent="."]
+margin_left = 1236.0
+margin_top = 275.0
+margin_right = 1236.0
+margin_bottom = 275.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_15"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_16" type="TextureRect" parent="."]
+margin_left = 1349.0
+margin_top = 329.0
+margin_right = 1349.0
+margin_bottom = 329.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_16"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_17" type="TextureRect" parent="."]
+margin_left = 1492.0
+margin_top = 295.0
+margin_right = 1492.0
+margin_bottom = 295.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_17"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_18" type="TextureRect" parent="."]
+margin_left = 1489.0
+margin_top = 103.0
+margin_right = 1489.0
+margin_bottom = 103.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_18"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_19" type="TextureRect" parent="."]
+margin_left = 581.0
+margin_top = 463.0
+margin_right = 581.0
+margin_bottom = 463.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_19"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_20" type="TextureRect" parent="."]
+margin_left = 694.0
+margin_top = 518.0
+margin_right = 694.0
+margin_bottom = 518.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_20"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_21" type="TextureRect" parent="."]
+margin_left = 837.0
+margin_top = 484.0
+margin_right = 837.0
+margin_bottom = 484.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_21"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_22" type="TextureRect" parent="."]
+margin_left = 950.0
+margin_top = 539.0
+margin_right = 950.0
+margin_bottom = 539.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_22"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_23" type="TextureRect" parent="."]
+margin_left = 1094.0
+margin_top = 503.0
+margin_right = 1094.0
+margin_bottom = 503.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_23"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_24" type="TextureRect" parent="."]
+margin_left = 1207.0
+margin_top = 558.0
+margin_right = 1207.0
+margin_bottom = 558.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_24"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_25" type="TextureRect" parent="."]
+margin_left = 1353.0
+margin_top = 523.0
+margin_right = 1353.0
+margin_bottom = 523.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_25"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_26" type="TextureRect" parent="."]
+margin_left = 1467.0
+margin_top = 575.0
+margin_right = 1467.0
+margin_bottom = 575.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_26"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_27" type="TextureRect" parent="."]
+margin_left = 1611.0
+margin_top = 540.0
+margin_right = 1611.0
+margin_bottom = 540.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_27"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_28" type="TextureRect" parent="."]
+margin_left = 1605.0
+margin_top = 350.0
+margin_right = 1605.0
+margin_bottom = 350.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_28"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_29" type="TextureRect" parent="."]
+margin_left = 323.0
+margin_top = 446.0
+margin_right = 323.0
+margin_bottom = 446.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_29"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_30" type="TextureRect" parent="."]
+margin_left = 436.0
+margin_top = 497.0
+margin_right = 436.0
+margin_bottom = 497.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_30"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_31" type="TextureRect" parent="."]
+margin_left = 322.0
+margin_top = 254.0
+margin_right = 322.0
+margin_bottom = 254.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_31"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_32" type="TextureRect" parent="."]
+margin_left = 439.0
+margin_top = 687.0
+margin_right = 439.0
+margin_bottom = 687.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_32"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_33" type="TextureRect" parent="."]
+margin_left = 551.0
+margin_top = 740.0
+margin_right = 551.0
+margin_bottom = 740.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_33"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_34" type="TextureRect" parent="."]
+margin_left = 694.0
+margin_top = 708.0
+margin_right = 694.0
+margin_bottom = 708.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_34"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_35" type="TextureRect" parent="."]
+margin_left = 806.0
+margin_top = 765.0
+margin_right = 806.0
+margin_bottom = 765.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_35"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_36" type="TextureRect" parent="."]
+margin_left = 951.0
+margin_top = 730.0
+margin_right = 951.0
+margin_bottom = 730.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_36"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_37" type="TextureRect" parent="."]
+margin_left = 1064.0
+margin_top = 785.0
+margin_right = 1064.0
+margin_bottom = 785.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_37"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_38" type="TextureRect" parent="."]
+margin_left = 1209.0
+margin_top = 751.0
+margin_right = 1209.0
+margin_bottom = 751.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_38"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_39" type="TextureRect" parent="."]
+margin_left = 1324.0
+margin_top = 802.0
+margin_right = 1324.0
+margin_bottom = 802.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_39"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_40" type="TextureRect" parent="."]
+margin_left = 1469.0
+margin_top = 767.0
+margin_right = 1469.0
+margin_bottom = 767.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_40"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_41" type="TextureRect" parent="."]
+margin_left = 666.0
+margin_top = 988.0
+margin_right = 666.0
+margin_bottom = 988.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_41"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_42" type="TextureRect" parent="."]
+margin_left = 555.0
+margin_top = 932.0
+margin_right = 555.0
+margin_bottom = 932.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_42"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_43" type="TextureRect" parent="."]
+margin_left = 411.0
+margin_top = 966.0
+margin_right = 411.0
+margin_bottom = 966.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_43"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_44" type="TextureRect" parent="."]
+margin_left = 299.0
+margin_top = 914.0
+margin_right = 299.0
+margin_bottom = 914.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_44"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_45" type="TextureRect" parent="."]
+margin_left = 922.0
+margin_top = 1011.0
+margin_right = 922.0
+margin_bottom = 1011.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_45"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_46" type="TextureRect" parent="."]
+margin_left = 809.0
+margin_top = 956.0
+margin_right = 809.0
+margin_bottom = 956.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_46"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_47" type="TextureRect" parent="."]
+margin_left = 1181.0
+margin_top = 1030.0
+margin_right = 1181.0
+margin_bottom = 1030.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_47"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_48" type="TextureRect" parent="."]
+margin_left = 1066.0
+margin_top = 978.0
+margin_right = 1066.0
+margin_bottom = 978.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_48"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_49" type="TextureRect" parent="."]
+margin_left = 1443.0
+margin_top = 1043.0
+margin_right = 1443.0
+margin_bottom = 1043.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_49"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_50" type="TextureRect" parent="."]
+margin_left = 1327.0
+margin_top = 995.0
+margin_right = 1327.0
+margin_bottom = 995.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_50"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_51" type="TextureRect" parent="."]
+margin_left = 1578.0
+margin_top = 824.0
+margin_right = 1578.0
+margin_bottom = 824.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_51"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_52" type="TextureRect" parent="."]
+margin_left = 1584.0
+margin_top = 1012.0
+margin_right = 1584.0
+margin_bottom = 1012.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_52"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_53" type="TextureRect" parent="."]
+margin_left = 668.0
+margin_top = 1179.0
+margin_right = 668.0
+margin_bottom = 1179.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_53"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="fig_54" type="TextureRect" parent="."]
+margin_left = 925.0
+margin_top = 1203.0
+margin_right = 925.0
+margin_bottom = 1203.0
+rect_rotation = 180.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="fig_54"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="Sprite2" type="Sprite" parent="fig_54"]
+visible = false
+position = Vector2( -782, 664 )
+rotation = 3.14159
+texture = ExtResource( 1 )
+
+[node name="Sprite3" type="Sprite" parent="fig_54"]
+visible = false
+position = Vector2( 719, 664 )
+rotation = 3.14159
+texture = ExtResource( 1 )

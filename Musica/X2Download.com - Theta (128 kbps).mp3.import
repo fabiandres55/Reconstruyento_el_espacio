@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/X2Download.com - Theta (128 kbps).mp3-7e0d5987dd6bcb1a172dd2c199710594.mp3str"
+
+[deps]
+
+source_file="res://Musica/X2Download.com - Theta (128 kbps).mp3"
+dest_files=[ "res://.import/X2Download.com - Theta (128 kbps).mp3-7e0d5987dd6bcb1a172dd2c199710594.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/X2Download.com - G.F.Haendel - Watermusic (PART III_ Hornpipe-Menuet-Rigaudon I_II-etc.) (128 kbps).mp3-59038381c79443fe46671ad28fcd982f.mp3str"
+
+[deps]
+
+source_file="res://Musica/X2Download.com - G.F.Haendel - Watermusic (PART III_ Hornpipe-Menuet-Rigaudon I_II-etc.) (128 kbps).mp3"
+dest_files=[ "res://.import/X2Download.com - G.F.Haendel - Watermusic (PART III_ Hornpipe-Menuet-Rigaudon I_II-etc.) (128 kbps).mp3-59038381c79443fe46671ad28fcd982f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

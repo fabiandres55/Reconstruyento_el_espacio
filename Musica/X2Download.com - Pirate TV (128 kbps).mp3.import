@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/X2Download.com - Pirate TV (128 kbps).mp3-2626c60cec15c7b0a1e32070b78108f4.mp3str"
+
+[deps]
+
+source_file="res://Musica/X2Download.com - Pirate TV (128 kbps).mp3"
+dest_files=[ "res://.import/X2Download.com - Pirate TV (128 kbps).mp3-2626c60cec15c7b0a1e32070b78108f4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

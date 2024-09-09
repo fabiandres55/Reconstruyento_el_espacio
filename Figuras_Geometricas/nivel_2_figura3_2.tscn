@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scrips/Nivel_2/level_1/nivel_2_figura3_2.gd" type="Script" id=1]
+[ext_resource path="res://Imagenes/Pal gei/tri11.png" type="Texture" id=2]
+[ext_resource path="res://Scrips/Nivel_2/level_1/nivel_2_figura3_2fig.gd" type="Script" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 22.0227
+
+[node name="nivel_2_figura3_2" type="TextureRect"]
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="figura" type="TextureRect" parent="."]
+margin_left = 175.0
+margin_top = 300.0
+margin_right = 175.0
+margin_bottom = 300.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="figura"]
+modulate = Color( 1, 1, 1, 0.796078 )
+texture = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="figura/Sprite"]
+margin_left = -31.0
+margin_top = -33.0
+margin_right = 32.0
+margin_bottom = 29.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="figura"]
+position = Vector2( 0, 10 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="figura/Area2D"]
+shape = SubResource( 1 )
+
+[node name="Area_teselado" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area_teselado"]
+polygon = PoolVector2Array( 419, -281, 419, 1346, 1497, 1351, 1499, -285 )
+
+[connection signal="move_to_top" from="figura" to="." method="_on_figura_move_to_top"]
+[connection signal="gui_input" from="figura/Sprite/TextureRect" to="figura" method="_on_TextureRect_gui_input"]
+[connection signal="area_entered" from="figura/Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="figura/Area2D" to="." method="_on_Area2D_area_exited"]

@@ -1,0 +1,337 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Imagenes/regree22.png" type="Texture" id=1]
+[ext_resource path="res://Imagenes/regree23.png" type="Texture" id=2]
+[ext_resource path="res://Imagenes/girar_izq.png" type="Texture" id=3]
+[ext_resource path="res://Imagenes/girar_der_negro.png" type="Texture" id=4]
+[ext_resource path="res://Imagenes/girar_izq_negro.png" type="Texture" id=5]
+[ext_resource path="res://Imagenes/girar_der_.png" type="Texture" id=6]
+[ext_resource path="res://Imagenes/tese.png" type="Texture" id=7]
+[ext_resource path="res://Imagenes/apilar.png" type="Texture" id=8]
+[ext_resource path="res://Imagenes/api.png" type="Texture" id=9]
+[ext_resource path="res://Imagenes/tese2.png" type="Texture" id=10]
+[ext_resource path="res://Scrips/Hexagono/Figuras_Hexagonos.gd" type="Script" id=11]
+[ext_resource path="res://Figuras_Geometricas/Hexagono_.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Imagenes/hexagonofondo12.png" type="Texture" id=13]
+[ext_resource path="res://Imagenes/hexagonofondo1.png" type="Texture" id=14]
+[ext_resource path="res://Scrips/Hexagono/Teselado_Hexagono.gd" type="Script" id=15]
+[ext_resource path="res://Musica/ES_Maharadjan Wishes - Jhukane Bada.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Musica/sound-14.mp3" type="AudioStream" id=17]
+[ext_resource path="res://Musica/sound-2.mp3" type="AudioStream" id=18]
+[ext_resource path="res://Escenas/Instrucciones/Instrucciones.tscn" type="PackedScene" id=19]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Intro_saida"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../AudioStreamPlayer:autoplay")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Intro_saida"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[node name="Teselado_Hexagono" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1920.0
+margin_bottom = -1080.0
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Figuras_Hexagonos" type="Control" parent="."]
+script = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Imagen" type="Node2D" parent="Figuras_Hexagonos"]
+
+[node name="Imagen_izq" type="Node2D" parent="Figuras_Hexagonos/Imagen"]
+
+[node name="Fondo23" type="Sprite" parent="Figuras_Hexagonos/Imagen/Imagen_izq"]
+position = Vector2( 209, 540 )
+texture = ExtResource( 14 )
+
+[node name="Salir" type="TextureButton" parent="Figuras_Hexagonos/Imagen/Imagen_izq"]
+margin_left = 10.0
+margin_top = 7.0
+margin_right = 148.0
+margin_bottom = 145.0
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Izq" type="TextureButton" parent="Figuras_Hexagonos/Imagen/Imagen_izq"]
+margin_left = 28.0
+margin_top = 626.0
+margin_right = 166.0
+margin_bottom = 764.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Der" type="TextureButton" parent="Figuras_Hexagonos/Imagen/Imagen_izq"]
+margin_left = 237.0
+margin_top = 626.0
+margin_right = 375.0
+margin_bottom = 764.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Imagen_der" type="Node2D" parent="Figuras_Hexagonos/Imagen"]
+
+[node name="Fondolado23" type="Sprite" parent="Figuras_Hexagonos/Imagen/Imagen_der"]
+position = Vector2( 1709, 540 )
+texture = ExtResource( 13 )
+
+[node name="Apilar" type="TextureButton" parent="Figuras_Hexagonos/Imagen/Imagen_der"]
+margin_left = 1633.0
+margin_top = 400.0
+margin_right = 1771.0
+margin_bottom = 538.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Teselar" type="TextureButton" parent="Figuras_Hexagonos/Imagen/Imagen_der"]
+margin_left = 1633.0
+margin_top = 600.0
+margin_right = 1771.0
+margin_bottom = 738.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hexagono_33" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_34" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_2" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_3" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_4" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_5" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_6" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_7" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_8" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_9" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_10" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_11" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_12" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_13" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_14" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_15" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_16" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_17" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_18" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_19" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_20" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_21" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_22" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_23" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_24" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_25" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_26" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_27" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_28" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_29" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_30" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_31" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Hexagono_32" parent="Figuras_Hexagonos" instance=ExtResource( 12 )]
+
+[node name="Seleccion" type="AudioStreamPlayer" parent="Figuras_Hexagonos"]
+stream = ExtResource( 18 )
+volume_db = 10.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 1922.0
+margin_bottom = 1083.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Intro" type="AnimationPlayer" parent="ColorRect"]
+autoplay = "Intro_saida"
+anims/Intro_saida = SubResource( 1 )
+anims/RESET = SubResource( 2 )
+
+[node name="Salida" type="AnimationPlayer" parent="ColorRect"]
+anims/Intro_saida = SubResource( 3 )
+anims/RESET = SubResource( 4 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+volume_db = -16.0
+autoplay = true
+
+[node name="Salir" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+volume_db = 10.0
+
+[node name="Instrucciones" parent="." instance=ExtResource( 19 )]
+
+[connection signal="pressed" from="Figuras_Hexagonos/Imagen/Imagen_izq/Salir" to="." method="_on_Salir_pressed"]
+[connection signal="pressed" from="Figuras_Hexagonos/Imagen/Imagen_izq/Izq" to="Figuras_Hexagonos" method="_on_Izq_pressed"]
+[connection signal="pressed" from="Figuras_Hexagonos/Imagen/Imagen_izq/Der" to="Figuras_Hexagonos" method="_on_Der_pressed"]
+[connection signal="pressed" from="Figuras_Hexagonos/Imagen/Imagen_der/Apilar" to="Figuras_Hexagonos" method="_on_Apilar_pressed"]
+[connection signal="pressed" from="Figuras_Hexagonos/Imagen/Imagen_der/Teselar" to="Figuras_Hexagonos" method="_on_Teselar_pressed"]
+[connection signal="animation_finished" from="ColorRect/Salida" to="." method="_on_Salida_animation_finished"]

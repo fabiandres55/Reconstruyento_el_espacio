@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/y2mate.com - Stellar Dance.mp3-87788b35a8a0fa765b829997fb065f9b.mp3str"
+
+[deps]
+
+source_file="res://Musica/y2mate.com - Stellar Dance.mp3"
+dest_files=[ "res://.import/y2mate.com - Stellar Dance.mp3-87788b35a8a0fa765b829997fb065f9b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

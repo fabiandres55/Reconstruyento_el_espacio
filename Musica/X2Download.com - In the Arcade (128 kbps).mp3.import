@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/X2Download.com - In the Arcade (128 kbps).mp3-3abd5b9a7ab4c78e9118c6f3edc7fe60.mp3str"
+
+[deps]
+
+source_file="res://Musica/X2Download.com - In the Arcade (128 kbps).mp3"
+dest_files=[ "res://.import/X2Download.com - In the Arcade (128 kbps).mp3-3abd5b9a7ab4c78e9118c6f3edc7fe60.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=2.41

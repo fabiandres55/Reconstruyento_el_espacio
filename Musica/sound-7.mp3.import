@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sound-7.mp3-7354bc1adf01141ee92fbf3c1b95bb05.mp3str"
+
+[deps]
+
+source_file="res://Musica/sound-7.mp3"
+dest_files=[ "res://.import/sound-7.mp3-7354bc1adf01141ee92fbf3c1b95bb05.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Danzas_hungaras.mp3-d600cf5b367880416b49711b67b93c4c.mp3str"
+
+[deps]
+
+source_file="res://Musica/Danzas_hungaras.mp3"
+dest_files=[ "res://.import/Danzas_hungaras.mp3-d600cf5b367880416b49711b67b93c4c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

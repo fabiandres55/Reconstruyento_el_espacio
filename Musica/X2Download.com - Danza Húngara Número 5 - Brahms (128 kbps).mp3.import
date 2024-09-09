@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/X2Download.com - Danza Húngara Número 5 - Brahms (128 kbps).mp3-e90812a5b4b9c278639576f22b2370d0.mp3str"
+
+[deps]
+
+source_file="res://Musica/X2Download.com - Danza Húngara Número 5 - Brahms (128 kbps).mp3"
+dest_files=[ "res://.import/X2Download.com - Danza Húngara Número 5 - Brahms (128 kbps).mp3-e90812a5b4b9c278639576f22b2370d0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
